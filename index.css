@@ -1,0 +1,144 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  margin-top: 20px;
+}
+/* Navbar styling */
+nav {
+ /* Set navbar background color to black */
+  padding: 10px 5px; /* Added right padding */
+}
+.section-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+nav a {
+  color: #060606; /* Set the color of nav links to white */
+  font-weight: bold;
+  margin: 0 15px;
+  padding-right: 5px; /* Added padding to the right of each nav link */
+}
+.banner {
+  margin-top: 50px;
+}
+.banner .quote {
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 800;
+  color: #4e4a4ae0;
+}
+.banner .quote-icon {
+  font-size: 3rem;
+  color: #ccc;
+}
+.banner-content{
+  top: 5px;
+}
+.section {
+  padding: 80px 15px;
+}
+.section h2 {
+  font-weight: bold;
+}
+footer {
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding-left: 150px;
+}
+.quote {
+  position: relative;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 40px 20px; /* Padding to ensure the background is clear */
+  line-height: 1.5;
+  z-index: 1;
+}
+
+/* Adding the left quote as a background image */
+.quote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust as needed */
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-image: url('image/left.png'); /* Left quote image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* Set low opacity */
+  z-index: -1; /* Keep it behind the text */
+}
+
+/* Adding the right quote as a background image */
+.quote::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Adjust as needed */
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-image: url('image/r.png'); /* Right quote image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* Set low opacity */
+  z-index: -1; /* Keep it behind the text */
+}
+
+
+.about-section {
+  background-image: url('path-to-your-image.jpg'); /* Add your background image */
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center center; /* Center the background image */
+  padding: 60px 20px; /* Add padding to the section */
+  color: rgb(0, 0, 0); /* Text color to contrast with the background */
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.bold-gray {
+  color: gray;
+  font-weight: bold;
+}
+
+/* Style for the explore button */
+.btn-dark {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-dark:hover {
+  background-color: gray;
+  color: black;
+}
+
+/* Paragraph styling */
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(0, 0, 0); /* Ensure text is readable against the background */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .section-heading {
+      font-size: 2rem;
+  }
+
+  .about-section p {
+      font-size: 1rem;
+  }
+}
