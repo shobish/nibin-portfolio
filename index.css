@@ -1,24 +1,37 @@
 body {
   font-family: 'Inter', sans-serif;
   background-color: #fff;
-  margin-top: 20px;
 }
 /* Navbar styling */
 nav {
- /* Set navbar background color to black */
-  padding: 10px 5px; /* Added right padding */
+   padding: 10px 5px; /* Added right padding */
 }
+
 .section-container {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.navbar {
+  font-weight: bold; /* Make navbar text bold */
+}
+
 nav a {
-  color: #060606; /* Set the color of nav links to white */
-  font-weight: bold;
+  color: white; /* Set the color of nav links to white */
+  font-weight: bold; /* Ensure nav link text is bold */
   margin: 0 15px;
   padding-right: 5px; /* Added padding to the right of each nav link */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.navbar-brand {
+  display: flex; /* Ensures the logo aligns properly */
+  align-items: center; /* Centers logo vertically */
 }
 /* .banner {
   margin-top: 50px;
@@ -103,8 +116,12 @@ footer {
 .section-heading {
   font-size: 2.5rem;
   color: rgb(0, 0, 0);
-}
+  padding-right: 145px;
 
+}
+hr{
+  margin-top: -40px;
+}
 .bold-gray {
   color: gray;
   font-weight: bold;
@@ -166,17 +183,25 @@ footer {
 }
 
 /* award */
+
 .award-section {
   margin: 20px;
 }
+
 .award-year {
-  font-size: 72px;
+  font-size: 72px; /* Keep your existing font size */
   font-weight: bold;
-  color: #d9d9d9;
+  color: white; /* Change text color to white for better contrast */
   position: absolute;
   right: 20px;
   top: 0;
+  background-color: red; /* Add background color for wrap effect */
+  padding: 10px; /* Add some padding for better aesthetics */
+  transform: rotate(60deg); /* Rotate the text */
+  transform-origin: top right; /* Set the origin for rotation */
+  z-index: 1; /* Ensure it sits above other content */
 }
+
 .award-card {
   position: relative;
   border-radius: 15px;
@@ -184,20 +209,23 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
+
 .award-card img {
   width: 100%;
   border-radius: 15px 0 0 15px;
   height: 250px;
 }
+
 .award-card-content {
   padding: 20px;
 }
+
 .award-title {
   font-size: 24px;
   font-weight: bold;
   width: 430px;
-
 }
+
 .award-description {
   color: #666;
 }
@@ -229,4 +257,46 @@ footer {
 
 .read-more-btn {
   margin-top: 10px;
+}
+
+ /* Style to position the pause button in the top-left */
+ .top-left-pause {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* Style for next/previous buttons on the right side */
+.right-side-control {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.image-container,
+.embed-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.image-size {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.embed-responsive {
+    height: 315px; /* You can adjust this based on design preference */
+    max-height: 100%;
+}
+iframe.embed-responsive-item {
+  width: 500px;
+  height: 250px;
+}
+.impact-section .image-container {
+  width: 418px;
+  
 }
