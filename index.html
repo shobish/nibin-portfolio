@@ -10,38 +10,40 @@
     <link rel="stylesheet" href="index.css">
     
 </head>
-<body>
+<b>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <div class="navbar navbar-expand-lg">
         <div class="container">
-            <img class="navbar-brand" src="image/nibin_logo.svg" width="252px" >
+            <img class="navbar-brand" src="image/nibin_logo.svg" width="252px" aria-label="log">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#welcome">Welcome</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="story.html">Story</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#awards">Awards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blogs">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <nav>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#welcome">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="story.html">Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#awards">Awards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
+    </div>
 
     <!-- Banner Section -->
     <section class="banner section-container container">
@@ -60,12 +62,9 @@
     <section class="about-section section-container container">
       <div class="row align-items-center">
           <div class="col-md-6">
-              <h1 class="section-heading">
-                  Smashing Limits,
-                  Accelerating Progress 
+              <h2 class="section-heading">
                   <span class="bold-gray">Meet Nibin Mathew</span>
-              </h1>
-             
+              </h2>
           </div>
           <div class="col-md-6">
               <p>
@@ -81,18 +80,18 @@
                   determined actions, paving the way for a brighter, more inclusive future.
               </p>
           </div>
-          <button class="btn btn-dark ">Explore more</button>
+          <button class="btn btn-dark ">Read Nibin's <a href="/story">Stories</a></button>
       </div>
     </section>
-    <hr>
+ <hr role="presentation">
     <section class="container mt-5 impact-section">
         <div class="row">
             <!-- Content Section -->
             <h2 class="content-heading">Driving Action, Creating Impact</h2>
             <div class="col-md-6">
                 <!-- Event 1 -->
-                <article class="mb-4">
-                    <h3 class="event-title">Global Accessibility Awareness Day 2024</h3>
+                <article class="mb-4" role="presentation">
+                    <h3 id="gad" class="event-title">Global Accessibility Awareness Day 2024</h3>
                     <p class="event-description">
                     Watch as Nibin reflects on the role of assistive technology in his everyday life, 
                     enabling him to live with independence and dignity. He calls on us to rethink how 
@@ -100,7 +99,7 @@
                     powerful tool for driving social progress.
                     </p>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com" 
+                        <iframe aria-labelledby="gad" title="youtube" class="embed-responsive-item" src="https://www.youtube.com" 
                             allowfullscreen></iframe>
                     </div>
                 </article>
@@ -174,7 +173,7 @@
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="award-card-content">
-                        <h5 class="award-title">The best sportsperson with disabilities for the 2023 Kerala State Award.</h5>
+                        <h3 class="award-title">The best sportsperson with disabilities for the 2023 Kerala State Award.</h3>
                         <p class="award-description">Issued by Department of Social Justice, Government of Kerala · Nov 2023 <br>
                             This recognition takes the form of a prestigious State Award, signifying high appreciation from the Government of Kerala. The official announcement was made on December 3, International Day of Persons with Disabilities 2023.</p>
                     </div>
@@ -189,7 +188,7 @@
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="award-card-content">
-                        <h5 class="award-title">Bronze medalist at blind tennis championship at IBSA world game 2023</h5>
+                        <h3 class="award-title">Bronze medalist at blind tennis championship at IBSA world game 2023</h3>
                         <p class="award-description">Bronze medalist at blind tennis championship at IBSA world game 2023 <br/><br/>
                             Issued by International blind tennis association(IBTA) · Aug 2023<br/><br/>
                             The first blind tennis athlete from India achieved a historic milestone by winning the country's first blind tennis medal at the IBSA World Games 2023 held in Birmingham, London, in August 2023. This remarkable feat not only marked an accomplishment but also became a part of history, as it was achieved in the athlete's inaugural international competition. The IBSA World Games, considered the largest blind sports competition after the Paralympics, added substantial significance to this proud moment for the country.</p>
@@ -205,7 +204,7 @@
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="award-card-content">
-                        <h5 class="award-title">Recipient of G3ict's Digital Accessibility Rights Education (DARE) scholarship 2021.</h5>
+                        <h3 class="award-title">Recipient of G3ict's Digital Accessibility Rights Education (DARE) scholarship 2021.</h3>
                         <p class="award-description">
                             Recipient of G3ict's Digital Accessibility Rights Education (DARE) scholarship 2021 <br/>
                             Issued by Global Initiative for Inclusive Information and Communication Technologies(G3ICT) · Dec 2021 <br/>
@@ -224,7 +223,7 @@
             <div class="row no-gutters">
                 <div class="col-md-8">
                     <div class="award-card-content">
-                        <h5 class="award-title">National Champion Sound ball 2020</h5>
+                        <h3 class="award-title">National Champion Sound ball 2020</h3>
                         <p class="award-description">
                             National Champion Sound ball 2020 <br/>
                             Issued by Indian Blind Sports Association · Feb 2020 <br/>
@@ -247,13 +246,13 @@
     <!-- Blogs Section -->
    
     <section id="blogs" class="section container mt-5">
-        <h2 class="mb-4">Blogs</h2>
+        <h2 class="mb-4">News Hilights </h2>
         <div class="row g-3">
             <!-- First Blog Item -->
             <div class="col-lg-4 col-md-6">
                 <div class="card news-card">
                     <div class="card-body">
-                        <h5 class="news-title">Visually challenged youth in Wayanad scripts a success story in blind tennis</h5>
+                        <h3 class="news-title">Visually challenged youth in Wayanad scripts a success story in blind tennis</h3>
                         <p class="card-text">Nibin Mathew wins bronze medal in blind tennis at the World Games of International....</p>
                         <img src="image/news-image-1.jpg" class="card-img-top" alt="News Image">
                         <div class="d-flex justify-content-between align-items-center mt-2">
@@ -268,7 +267,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card news-card">
                     <div class="card-body">
-                        <h5 class="news-title">Kerala State awards for persons with disabilities announced</h5>
+                        <h3 class="news-title">Kerala State awards for persons with disabilities announced</h3>
                         <p class="card-text">The award for the best sportsperson with disability will be shared by Muhammed Nisar A.P., Nibin Mathew, ...</p>
                         <img src="image/news-image-1.jpg" class="card-img-top" alt="News Image">
                         <div class="d-flex justify-content-between align-items-center mt-2">
@@ -283,7 +282,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card news-card">
                     <div class="card-body">
-                        <h5 class="news-title">There’s no blindsiding this 25-year-old Bengaluru student on a tennis court</h5>
+                        <h3 class="news-title">There’s no blindsiding this 25-year-old Bengaluru student on a tennis court</h3>
                         <p class="card-text">Playing tennis could be hard for the blind even if the ball makes a tinkling sound when it hits a surface. But 25-year-old Nibin Mathew....</p>
                         <img src="image/news-image-1.jpg" class="card-img-top" alt="News Image">
                         <div class="d-flex justify-content-between align-items-center mt-2">
@@ -298,7 +297,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card news-card">
                     <div class="card-body">
-                        <h5 class="news-title">Soundball: the tennis game breaking stereotypes about the blind in India</h5>
+                        <h3 class="news-title">Soundball: the tennis game breaking stereotypes about the blind in India</h3>
                         <p class="card-text">Ready?" Nibin Mathew shouts out to his opponent who is standing beyond the net on the tennis court. "Yes," comes the ringing reply,</p>
                         <img src="image/news-image-1.jpg" class="card-img-top" alt="News Image">
                         <div class="d-flex justify-content-between align-items-center mt-2">
@@ -328,21 +327,21 @@
                   <div class="carousel-item active">
                     <img src="image/manwithcup.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
+                      <h3>First slide label</h3>
                       <p>Some representative placeholder content for the first slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="image/cup.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
+                      <h3>Second slide label</h3>
                       <p>Some representative placeholder content for the second slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="image/image2.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
+                      <h3>Third slide label</h3>
                       <p>Some representative placeholder content for the third slide.</p>
                     </div>
                   </div>
