@@ -317,6 +317,13 @@ iframe.embed-responsive-item {
   width: 418px;
   
 }
+.iframe-video{
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 
 
 /*  */
@@ -685,6 +692,13 @@ img.reload {
 
 .carousel-tablist-moreaccessible [role="tab"] {
   z-index: 20;
+}
+.impact-section .impact {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 45px;
+  height: auto;
+  border-radius: 12px;
+
 }
 
 .navbar {
