@@ -6,12 +6,23 @@ body {
 nav {
    padding: 10px 5px; /* Added right padding */
 }
-
+.read-more-stories{
+  color: #eee;
+  text-decoration: none;
+}
 .section-container {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.video-container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  height: 450px;
+
 }
 
 .navbar {
@@ -37,13 +48,17 @@ nav a {
   margin-top: 50px;
 } */
  .banner-image{
-  width: 700px;
+  width: 100%;
  }
 .banner .quote {
   font-size: 38px;
   font-style: italic;
   font-weight: 800;
   color: #4e4a4ae0;
+}
+video 
+{
+  width: 100%;
 }
 .banner .quote-icon {
   font-size: 3rem;
@@ -206,8 +221,10 @@ hr{
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   margin-bottom: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
 }
 
 .award-card img {
@@ -223,7 +240,7 @@ hr{
 .award-title {
   font-size: 24px;
   font-weight: bold;
-  width: 430px;
+ 
 }
 
 .award-description {
@@ -313,7 +330,8 @@ img.reload {
 
 .carousel-tablist {
   background-color: #eee;
-  max-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .carousel-tablist .carousel-inner {
@@ -331,8 +349,8 @@ img.reload {
 
 .carousel-tablist .carousel-item {
   display: none;
-  max-height: 400px;
-  max-width: 900px;
+  max-height: 450px;
+  max-width: 1200px;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -667,4 +685,36 @@ img.reload {
 
 .carousel-tablist-moreaccessible [role="tab"] {
   z-index: 20;
+}
+
+.navbar {
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 99;
+ 
+}
+.social-media-icons {
+  display: flex;
+  list-style: none; /* Remove the list-style icons */
+  padding: 0;
+  margin:  0;
+  bottom:0;
+  margin-top: -190px;
+  margin-left: 10px;
+ 
+}
+
+.social-media-icons li {
+  width: 60px; /* Set the width for each list item */
+  height: 60px;
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;     /* Center the icons vertically */
+}
+
+.social-media-icons li i {
+  font-size: 25px; /* Set the font size for the icons */
+  display: block;
 }
