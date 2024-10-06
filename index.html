@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nibin Mathew</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
@@ -73,26 +74,37 @@
               </p>
               <div class="btn btn-dark ">  <a class="read-more-stories" href="/story">Read more about his journey</a></div>
           </div>
-        <div class="col-md-6 social-media " role="navigation" aria-label="social media">
+        <nav class="col-md-6 social-media " aria-label="social media">
             <ul class="social-media-icons">
-               
+                <span hidden id="open-span" class="screen-reader-text"> opens a new window</span>
                 <li>
                     <span hidden id="youtube-label" class="screen-reader-text">youtube</span>
-                    <a  aria-labelledby="youtube-label open-span" href="https://www.youtube.com/@inclusivetennisindia?app=desktop"><i class="fa-brands fa-square-youtube"></i> </a>
-                    <span  id="open-span" class="screen-reader-text"> opens a new window</span>
+                    <a  target="_blank" aria-labelledby="youtube-label open-span" href="https://www.youtube.com/@inclusivetennisindia?app=desktop">
+                        <i class="fa-brands fa-square-youtube"></i> 
+                    </a>
                 </li>
                 <li >
-                    <a aria-label="linkedIn" href="https://www.linkedin.com/in/nibin-mathew/?originalSubdomain=in"><i class="fa-brands fa-linkedin-in"></i> </a>
+                    <span hidden id="linkedIn-label" class="screen-reader-text">linkedIn</span>
+
+                    <a target="_blank" aria-labelledby="linkedIn-label open-span" href="https://www.linkedin.com/in/nibin-mathew/?originalSubdomain=in">
+                        <i class="fa-brands fa-linkedin-in"></i> 
+                    </a>
                 </li>
                 <li >
-                    <a aria-label="instagram" href="https://www.instagram.com/nibinmathewpaul?igsh=dGdreTNhM2MydWNz&utm_source=qr "> <i class="fa-brands fa-instagram"></i> <span class="screen-reader-text"> opens a new window</span></a>
+                    <span hidden id="instagram-label" class="screen-reader-text">instagram</span>
+                    <a target="_blank" aria-labelledby="instagram-label open-span" href="https://www.instagram.com/nibinmathewpaul?igsh=dGdreTNhM2MydWNz&utm_source=qr ">
+                         <i class="fa-brands fa-instagram"></i> 
+                    </a>
                 </li>
                 <li >
-                    <a aria-label="facebook" href="https://www.facebook.com/nibin.mathew.754/"> <i class="fa-brands fa-facebook"></i> <span class="screen-reader-text"> opens a new window</span></a>
+                    <span hidden id="facebook-label" class="screen-reader-text">facebook</span>
+                    <a target="_blank" aria-labelledby="facebook-label open-span" href="https://www.facebook.com/nibin.mathew.754/">
+                         <i class="fa-brands fa-facebook"></i> 
+                    </a>
                     
                 </li>
             </ul>
-        </div>
+        </nav>
          
       </div>
     </section>
@@ -259,7 +271,7 @@
     <section class="container mt-5 impact-section">
         <div class="row">
             <h2 class="content-heading">Recent activities</h2>
-            <div class="col-md-6">
+            <div class="col-md-4">
 
                 <article class="mb-4 impact" role="presentation" >
                     <h3 id="gad" class="event-title">Global Accessibility Awareness Day 2024 </h3>
@@ -274,7 +286,7 @@
                 <!-- Event 2 -->
                
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
 
                 <article class="mb-4 impact" role="presentation" >
                     <h3 id="gad" class="event-title">Studio 1886 BGSW Spotify podcast featuring Nibin and his London trip</h3>
@@ -282,17 +294,17 @@
                         Join Nibin Mathew on the Studio 1886 BGSW podcast as he shares his inspiring journey to becoming the first Indian blind tennis player to win a medal at the IBSA World Games 2023 in London. Hear about his experiences, the challenges he faced, and the unforgettable moments from his international triumph.
                     </p>
                     <p>
-                        Listen to the full interview here on <a aria-label="spotify link" href="https://open.spotify.com/episode/3VIS8SMP5GKbVxmLAQtzJa?si=dx-e3VnHS-yVs4WHpUoQFA">Spotify</a>
+                         <a class="btn btn-dark" aria-label="spotify link" href="https://open.spotify.com/episode/3VIS8SMP5GKbVxmLAQtzJa?si=dx-e3VnHS-yVs4WHpUoQFA"> Listen to the full interview here on Spotify</a>
                     </p>
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <!-- <div class="embed-responsive embed-responsive-16by9">
                         <iframe title="interview with nibin mathew" style="border-radius:12px" src="https://open.spotify.com/embed/episode/3VIS8SMP5GKbVxmLAQtzJa?utm_source=generator" width="100%" height="315" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
+                    </div> -->
                 </article>
                
                 <!-- Event 2 -->
                
             </div>
-            <div class="col-md-6 pt-12">
+            <div class="col-md-4 pt-12">
                 <article class="mb-4 impact" role="presentation" >
                     <h3 class="event-title">Bronze Highlights at IBSA World Games in London</h3>
                     <p class="event-description">
@@ -455,69 +467,65 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- Fourth Blog Item -->
-          
         </div>
        </div>
     </section> 
    
-   <section id="Projects">
+    <section>
         <div class="container">
-            <h1>Projects</h1>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img src="image/computer.jpg" height="300px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Early Access to Technology A Literacy Kit Empowering Blind Students</h5>
-                      <p class="card-text">Nibin began his journey with screen readers over a decade ago and has since trained professionals, students, and non-profit organizations in their use. His extensive experience in both in-person and virtual training has helped countless individuals improve their digital literacy and gain confidence in using assistive technology. Over the years, Nibin has worked with various groups, delivering impactful training that has bridged the gap between technology and accessibility for the visually impaired.
+            <h2>Projects</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            A Young Innovator Leading the Way in Removing Social Disparity
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        In 2021, Nibin was selected to embark on an innovation journey with Innovation by Youth with Disabilities (I-YwD), a groundbreaking initiative by the Government of Kerala. Conceived by the Kerala Development and Innovation Strategic Council (K-DISC) and implemented by the National Institute of Speech & Hearing (NISH), I-YwD was launched in March 2019. The program aims to identify individuals with disabilities who are passionate and self-driven to create innovative solutions, providing them with an inclusive platform to effect meaningful change in society.
+
+                            As part of this journey, Nibin has been actively engaged in various projects aimed at promoting inclusion, particularly in the field of sports. Collaborating with multiple stakeholders, he is working to drive social change and remove disparities through his innovative ideas and dedication to inclusion.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Early Access to Technology A Literacy Kit Empowering Blind Students
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    Nibin began his journey with screen readers over a decade ago and has since trained professionals, students, and non-profit organizations in their use. His extensive experience in both in-person and virtual training has helped countless individuals improve their digital literacy and gain confidence in using assistive technology. Over the years, Nibin has worked with various groups, delivering impactful training that has bridged the gap between technology and accessibility for the visually impaired.
 
                         As part of his master's degree in "Digital Society" at the International Institute of Information Technology, Bangalore (IIIT-B), Nibin collaborated with the Center for Accessibility in the Global South and Vision Empower to conduct influential research. His work focused on creating a comprehensive digital literacy learning kit specifically designed for visually impaired students and their parents. This research addressed a critical gap in technology adoption for the visually impaired, offering early intervention and tools to enhance their education and employability.
                         
                         Nibin’s research revealed that many visually impaired students only seek screen reader training after graduation, when they are preparing for employment in the public or private sector. Recognizing this, he developed a digital literacy kit that introduces assistive technologies early in the educational process. This kit includes a variety of activities and real-world examples to help students expand their understanding of technology and the world around them. The 10 modules cover essential topics such as computer hardware, the Windows operating system, browser use, and internet navigation, all presented in an engaging, gamified format.
                         
-                        The project was designed to be scalable across different languages, a vital consideration in India’s culturally and linguistically diverse landscape. Today, this resource is available in over five languages through the Subodha LMS, offered by Vision Empower, and continues to empower visually impaired students nationwide.
-                        </p>
+                        The project was designed to be scalable across different languages, a vital consideration in India’s culturally and linguistically diverse landscape. Today, this resource is available in over five languages through the Subodha LMS, offered by Vision Empower, and continues to empower visually impaired students nationwide
                     </div>
-                  </div>
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="image/book.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">UI Learning Pack for Students with Visual Impairments</h5>
-                      <p class="card-text">During Nibin's interactions with children with visual impairments while delivering computer lessons, particularly on internet-related topics, students expressed challenges in understanding user interface (UI) controls and navigation patterns. Many blind individuals, even today, are uncertain about how to interact with different controls such as buttons, links, radio buttons, or complex grid patterns on websites.
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        UI Learning Pack for Students with Visual Impairments
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                   During Nibin's interactions with children with visual impairments while delivering computer lessons, particularly on internet-related topics, students expressed challenges in understanding user interface (UI) controls and navigation patterns. Many blind individuals, even today, are uncertain about how to interact with different controls such as buttons, links, radio buttons, or complex grid patterns on websites.
 
                         To address this issue, Nibin developed a small yet impactful web tool that provides an interactive learning experience for students who are beginners in technology and web navigation. This tool is designed to help students understand various UI controls, their roles, keyboard behavior patterns, and how they appear, all through auditory feedback. When a control is focused, the tool reads aloud the name and function of each control, guiding students through their interactions step-by-step.
                         
                         What sets this tool apart is its ability to function without an internet connection, making it accessible in remote villages across India for digital literacy education. Though it is a simple concept, the tool has proven invaluable, especially in the first few weeks of learning, as it introduces the keyboard interaction model to visually impaired students. Since they lack visual affordances, the tool provides relevant descriptions and uses alternative modalities to ensure a comprehensive learning experience.
-                        </p>
                     </div>
-                  </div>
                 </div>
-                <div class="col"></div>
-                <div class="col last-project">
-                  <div class="card">
-                    <img src="image/usingphone.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">A Young Innovator Leading the Way in Removing Social Disparity</h5>
-                      <p class="card-text">In 2021, Nibin was selected to embark on an innovation journey with Innovation by Youth with Disabilities (I-YwD), a groundbreaking initiative by the Government of Kerala. Conceived by the Kerala Development and Innovation Strategic Council (K-DISC) and implemented by the National Institute of Speech & Hearing (NISH), I-YwD was launched in March 2019. The program aims to identify individuals with disabilities who are passionate and self-driven to create innovative solutions, providing them with an inclusive platform to effect meaningful change in society.
-
-                        As part of this journey, Nibin has been actively engaged in various projects aimed at promoting inclusion, particularly in the field of sports. Collaborating with multiple stakeholders, he is working to drive social change and remove disparities through his innovative ideas and dedication to inclusion.
-                        </p>
-                    </div>
-                  </div>
                 </div>
             </div>
         </div>
     </section>
-       
-      
-      
-              
-    
-    
    
 
     <!-- Footer -->
@@ -531,8 +539,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+   
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
 
     <!-- Smooth Scroll -->
     <script>
