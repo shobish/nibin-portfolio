@@ -24,6 +24,53 @@ nav {
   height: 450px;
 
 }
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full-screen height */
+  background: url('image/nb.png') no-repeat center center/cover; /* Set image as background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+}
+
+.quote {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.quote img.qote-last {
+  vertical-align: middle;
+}
+
+.banner-content {
+  margin-left: 50px;
+}
+
+.banner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d5d1d138; /* Dark overlay for text visibility */
+  z-index: 1;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #000000;
+}
 
 .navbar {
   font-weight: bold; /* Make navbar text bold */
