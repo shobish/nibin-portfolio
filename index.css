@@ -765,3 +765,36 @@ img.reload {
 .last-project{
   margin-top: -126px;
 }
+.screen-reader-text, .screen-reader-text span {
+  background-color: #212878 !important; 
+}
+.screen-reader-text {
+  position: absolute !important;
+  margin: -1px;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+  word-wrap: normal !important;
+  clip-path: inset(50%);
+
+  
+}
+.screen-reader-text:focus {
+  background-color: #340c0c;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
