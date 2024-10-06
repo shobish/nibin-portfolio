@@ -24,53 +24,6 @@ nav {
   height: 450px;
 
 }
-.banner-section {
-  position: relative;
-  width: 100%;
-  height: 90vh; /* Full-screen height */
-  background: url('image/nb.png') no-repeat center center/cover; /* Set image as background */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.text-overlay {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: left;
-}
-
-.quote {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.quote img.qote-last {
-  vertical-align: middle;
-}
-
-.banner-content {
-  margin-left: 50px;
-}
-
-.banner-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #d5d1d138; /* Dark overlay for text visibility */
-  z-index: 1;
-}
-
-.h6 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #000000;
-}
 
 .navbar {
   font-weight: bold; /* Make navbar text bold */
@@ -841,3 +794,195 @@ img.reload {
 .spotify-link:hover .play-icon {
   opacity: 1;
 }
+
+
+
+
+
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url('image/nibi.jpg') no-repeat center center/cover; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+}
+
+.quote {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.quote img.qote-last {
+  vertical-align: middle;
+}
+
+.banner-content {
+  margin-left: 50px;
+}
+
+.banner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d5d1d138; 
+  z-index: 1;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .banner-section {
+    height: auto;
+    padding: 40px 20px;
+    display: block;
+    text-align: center;
+    background: none; 
+  }
+
+  .text-overlay {
+    padding: 20px;
+  }
+
+  .banner-content {
+    margin-left: 0;
+  }
+
+  .quote {
+    font-size: 1.8rem; 
+    line-height: 1.3;
+  }
+
+  .quote img.qote-last {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .h6 {
+    font-size: 1rem;
+  }
+
+
+  .banner-image {
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-section {
+    height: auto;
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .h6 {
+    font-size: 1.1rem;
+  }
+
+  .banner-image {
+    width: 80%; 
+    height: auto;
+    margin: 20px auto;
+  }
+}
+ 
+/* 
+
+ .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.banner-content {
+  z-index: 2; 
+  color: white;
+}
+
+.banner img.qote-last {
+  vertical-align: middle;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 450px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: auto;
+    padding: 40px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .banner-content {
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+  }
+
+  .h6 {
+    font-size: 1rem;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: auto;
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+  }
+} */
