@@ -79,14 +79,18 @@ img.image-1{
 .story-overylay {
     margin-top: 50%;
     margin-bottom: 0;
-    color: #fff;
+    color: #fff !important;
     padding: 0 45px;
+}
+.story-overylay>h2 ,.story-overylay>p{
+    color: white;
 }
 .career-overylay{
     margin-top: 35%;
-    margin-bottom: 0;
-    color: #fff;
-    padding: 0 45px;
+    
+}
+.academic-overlay{
+    margin-top: 25%;
 }
 .career-image {
     border-radius: 8px;
