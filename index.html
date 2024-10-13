@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nibin Mathew</title>
+    <title>Home-Nibin Mathew</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,8 +51,15 @@
         <div class="row align-items-center text-overlay">
             <div class="col-md-6 banner-content">
                 <h1 class="quote">
-                    My mission is accessibility, my passion is sports, and my vision is a world where everyone thrives.
-                    <img src="image/r.png" alt="" class="qote-last">
+                   <p class="position-relative">
+                     <span>My mission is accessibility, my passion is sports, and my vision is a world where everyone thrives.</span>
+                     <span style="
+                     position: absolute;
+                     bottom: -8px;
+                     right: -15px;
+                 "><img src="image/r.png" alt="" class="qote-last"></span>
+                   </p>
+                    
                 </h1>
                 <p class="h6">
                     I see technology as a catalyst for social change, and sport gives me the strength to make it a reality.
@@ -76,40 +83,42 @@
                 </p>
                 <div class="btn btn-dark ">  <a class="read-more-stories" href="/story">Read more about his journey</a></div>
             </div>
-            <nav class="col-md-6 social-media " aria-label="social media">
-                <ul class="social-media-icons">
-                    <span hidden id="open-span" class="screen-reader-text"> opens a new window</span>
-                    <li>
-                        <span hidden id="youtube-label" class="screen-reader-text">youtube</span>
-                        <a  target="_blank" aria-labelledby="youtube-label open-span" href="https://www.youtube.com/@inclusivetennisindia?app=desktop">
-                            <i class="fa-brands fa-square-youtube"></i> 
-                        </a>
-                    </li>
-                    <li >
-                        <span hidden id="linkedIn-label" class="screen-reader-text">linkedIn</span>
-
-                        <a target="_blank" aria-labelledby="linkedIn-label open-span" href="https://www.linkedin.com/in/nibin-mathew/?originalSubdomain=in">
-                            <i class="fa-brands fa-linkedin-in"></i> 
-                        </a>
-                    </li>
-                    <li >
-                        <span hidden id="instagram-label" class="screen-reader-text">instagram</span>
-                        <a target="_blank" aria-labelledby="instagram-label open-span" href="https://www.instagram.com/nibinmathewpaul?igsh=dGdreTNhM2MydWNz&utm_source=qr ">
-                            <i class="fa-brands fa-instagram"></i> 
-                        </a>
-                    </li>
-                    <li >
-                        <span hidden id="facebook-label" class="screen-reader-text">facebook</span>
-                        <a target="_blank" aria-labelledby="facebook-label open-span" href="https://www.facebook.com/nibin.mathew.754/">
-                            <i class="fa-brands fa-facebook"></i> 
-                        </a>
-                        
-                    </li>
-                </ul>
-            </nav>
+            
             
         </div>
+        <nav class=" m-0 social-media " aria-label="social media">
+            <ul class="social-media-icons">
+                <span hidden id="open-span" class="screen-reader-text"> opens a new window</span>
+                <li>
+                    <span hidden id="youtube-label" class="screen-reader-text">youtube</span>
+                    <a  target="_blank" aria-labelledby="youtube-label open-span" href="https://www.youtube.com/@inclusivetennisindia?app=desktop">
+                        <i class="fa-brands fa-square-youtube"></i> 
+                    </a>
+                </li>
+                <li >
+                    <span hidden id="linkedIn-label" class="screen-reader-text">linkedIn</span>
+
+                    <a target="_blank" aria-labelledby="linkedIn-label open-span" href="https://www.linkedin.com/in/nibin-mathew/?originalSubdomain=in">
+                        <i class="fa-brands fa-linkedin-in"></i> 
+                    </a>
+                </li>
+                <li >
+                    <span hidden id="instagram-label" class="screen-reader-text">instagram</span>
+                    <a target="_blank" aria-labelledby="instagram-label open-span" href="https://www.instagram.com/nibinmathewpaul?igsh=dGdreTNhM2MydWNz&utm_source=qr ">
+                        <i class="fa-brands fa-instagram"></i> 
+                    </a>
+                </li>
+                <li >
+                    <span hidden id="facebook-label" class="screen-reader-text">facebook</span>
+                    <a target="_blank" aria-labelledby="facebook-label open-span" href="https://www.facebook.com/nibin.mathew.754/">
+                        <i class="fa-brands fa-facebook"></i> 
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
         </section>
+        
         <section id="myCarousel" class="carousel-tablist" aria-roledescription="carousel" aria-label="nibin's journey as slide video">
             <div class="carousel-inner">
                 <div class="controls">
@@ -554,17 +563,16 @@ $(document).ready(function () {
     $('a.nav-link').on('click', function (e) {
         var target = $(this).attr('href');
 
-        // Check if the href starts with '#' (indicating a local link)
         if (target.startsWith('#')) {
-            e.preventDefault(); // Prevent default behavior only for local links
+            e.preventDefault(); 
             if ($(target).length) {
-                var navbarHeight = $('.navbar').outerHeight(); // Get the height of the navbar
+                var navbarHeight = $('.navbar').outerHeight(); 
                 $('html, body').animate({
-                    scrollTop: $(target).offset().top - navbarHeight // Adjust scroll position
+                    scrollTop: $(target).offset().top - navbarHeight 
                 }, 800);
             }
         }
-        // If it's not a local link (like "story.html"), allow the default behavior
+       
     });
 });
 

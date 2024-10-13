@@ -56,6 +56,7 @@ nav a {
   font-weight: 800;
   color: #4e4a4ae0;
 }
+
 video 
 {
   width: 100%;
@@ -711,38 +712,49 @@ img.reload {
 }
 .social-media-icons {
   display: flex;
-  list-style: none; /* Remove the list-style icons */
+  list-style: none;
   padding: 0;
-  margin:  0;
-  bottom:0;
-  margin-top: -190px;
-  margin-left: 10px; 
- 
+  margin: 0;
+  bottom: 0;
+  background: #00000014;
+  border-radius: 90px;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+nav a {
+  margin-left: 0;
 }
 
 .social-media-icons li {
-  width: 60px; /* Set the width for each list item */
-  height: 60px;
+  
   display: flex;
   justify-content: center; /* Center the icons horizontally */
   align-items: center;  
   z-index: 999;   /* Center the icons vertically */
  
 }
-.social-media-icons li a{
-  color:#ffffff;
+.social-media-icons li a {
+  color: #ffffff;
   text-decoration: none;
-  background:#808080;
-  width: 50px;
-  height: 50px;
+  background: #808080;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   z-index: 999;
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;
+  margin: auto;  
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-right: 0;
 }
 .social-media-icons li i {
-  font-size: 25px; /* Set the font size for the icons */
+  font-size: 16px;
   display: block;
-  margin: 14px;
+  margin: 0;
 }
 #skip-link {
   position: absolute;
@@ -758,9 +770,7 @@ img.reload {
 #skip-link:focus {
   top: 10px; /* Brings it back into view when focused */
 }
-.col-md-6.social-media {
-  margin-top: 94px;
-}
+
 .last-project{
   margin-top: -126px;
 }
@@ -801,7 +811,7 @@ img.reload {
 .banner-section {
   position: relative;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -810,14 +820,14 @@ img.reload {
 
 .banner-bg-image {
   position: absolute;
-  top: 0;
+  top: auto;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the section properly */
+  height: auto;
+  object-fit: contain;
   z-index: 0;
+  bottom: 0;
 }
-
 .text-overlay {
   position: relative;
   z-index: 2;
@@ -880,7 +890,7 @@ img.reload {
 
   .quote img.qote-last {
     display: block;
-    margin: 10px auto;
+  
   }
 
   .h6 {
@@ -894,6 +904,7 @@ img.reload {
     height: auto;
     display: block;
   }
+
 }
 
 
@@ -995,3 +1006,51 @@ img.reload {
     margin: 20px auto;
   }
 } */
+
+
+@media(max-width:1199px)
+{
+  .banner .quote {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    color: #4e4a4ae0;
+  }
+  .quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    background-image: url(image/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+.qote-last {
+
+  width: 52px;
+  height: 52px;
+  
+}
+.banner .quote {
+  
+  padding-right: 6rem;
+}
+.banner-section
+{
+  min-height: 70vh;
+}
+}
+
+@media(max-width:560px)
+{
+  
+.banner .quote {
+  
+  padding-right: 0rem;
+}
+
+}

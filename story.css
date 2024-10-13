@@ -31,7 +31,7 @@ img.image-1{
     position: absolute;
     bottom: 0;
     top: 0;
-    left: 1%;
+   
     color: rgb(7, 7, 7);
     /* text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); */
 }
@@ -58,18 +58,9 @@ img.image-1{
     object-position: left center;
 }
 
-@media (max-width: 768px) {
-    .text-overlay {
-        top: 10%;
-        left: 5%;
-    }
-}
 
-.academic{
-    margin-top: 25px;
-    background-color: aliceblue;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
-}
+
+
 .stoy-paragraph{
     padding: 8px;
 }
@@ -77,21 +68,21 @@ img.image-1{
     position: relative;
 }
 .story-overylay {
-    margin-top: 50%;
     margin-bottom: 0;
     color: #fff !important;
-    padding: 0 45px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    margin-bottom: 11px;
 }
 .story-overylay>h2 ,.story-overylay>p{
     color: white;
 }
-.career-overylay{
-    margin-top: 35%;
-    
-}
-.academic-overlay{
-    margin-top: 25%;
-}
+
+
 .career-image {
     border-radius: 8px;
   
@@ -132,4 +123,87 @@ p, blockquote {
 blockquote {
     font-style: italic;
     font-weight: bold;
+}
+
+.text-image 
+{
+position: relative;
+min-height: 300px;
+width: 100%;
+color: white;
+
+}
+.text-image  h2
+{
+position: absolute;
+bottom: 15px;
+left: 15px;
+font-size: 16px;
+color: white;
+font-size: 26px;
+
+}
+.text-image img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.content-section 
+{
+    padding: 2rem 0 0;
+}
+
+.ptb-5
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media(max-width:767px)
+{
+    .full-container img
+    {
+       height: auto; 
+       margin-bottom: 1rem;
+    }
+    .text-content  
+    {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .full-container
+    {
+        height: auto;
+    }
+
+    .text-overlay
+    {
+        position: static;
+    }.banner-section
+    {
+        min-height: auto;
+    }
+    .story-quote
+    {
+        margin-top: 0!important;
+    }
+    .story-overylay>h2, .story-overylay>p {
+        margin: 0;
+        color: #000000;
+        padding: 0;
+    }
+    .story-overylay
+    {
+        padding-left: 0;
+    }
+}
+
+@media(min-width:768px)
+{
+    .story-overylay {
+       
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
