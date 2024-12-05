@@ -1080,7 +1080,11 @@ nav a {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-
+.award-image{
+  object-fit: cover;
+  object-position: 15% 17%;
+  
+}
 footer {
   background-color: #000;
   color: #fff;
