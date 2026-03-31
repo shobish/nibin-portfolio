@@ -1,0 +1,1140 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+/* Navbar styling */
+nav {
+   padding: 10px 5px; /* Added right padding */
+}
+.read-more-stories{
+  color: #eee;
+  text-decoration: none;
+}
+.section-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.video-container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  height: 450px;
+
+}
+
+.navbar {
+  font-weight: bold; /* Make navbar text bold */
+}
+
+nav a {
+  color: white; /* Set the color of nav links to white */
+  font-weight: bold; /* Ensure nav link text is bold */
+  margin: 0 15px;
+  padding-right: 5px; /* Added padding to the right of each nav link */
+}
+
+.navbar-nav {
+  margin-left: auto; /* Pushes the nav items to the right */
+}
+
+.navbar-brand {
+  display: flex; /* Ensures the logo aligns properly */
+  align-items: center; /* Centers logo vertically */
+}
+/* .banner {
+  margin-top: 50px;
+} */
+ .banner-image{
+  width: 100%;
+ }
+.banner .quote {
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 800;
+  color: #4e4a4ae0;
+}
+
+video 
+{
+  width: 100%;
+}
+.banner .quote-icon {
+  font-size: 3rem;
+  color: #ccc;
+}
+.banner-content{
+  top: 5px;
+}
+.section {
+  padding: 80px 15px;
+}
+.section h2 {
+  font-weight: bold;
+}
+footer {
+  padding: 20px 0;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  /* padding-left: 150px; */
+}
+.quote {
+  position: relative;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 40px 20px; /* Padding to ensure the background is clear */
+  line-height: 1.5;
+  z-index: 1;
+}
+
+/* Adding the left quote as a background image */
+.quote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust as needed */
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  background-image: url('image/left.png'); /* Left quote image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1; /* Set low opacity */
+  z-index: -1; /* Keep it behind the text */
+}
+
+.qote-last {
+    position: relative;
+    bottom: 0;
+    width: 82px;
+    height: 82px;
+    padding: 0;
+    opacity: 0.2;
+    right: 40px;
+    top:10px;
+}
+
+
+.about-section {
+  background-image: url('path-to-your-image.jpg'); /* Add your background image */
+  background-size: cover; /* Make sure the image covers the entire section */
+  background-position: center center; /* Center the background image */
+  padding: 60px 20px; /* Add padding to the section */
+  color: rgb(0, 0, 0); /* Text color to contrast with the background */
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  padding-right: 145px;
+
+}
+hr{
+  margin-top: -40px;
+}
+.bold-gray {
+  color: gray;
+  font-weight: bold;
+}
+
+/* Style for the explore button */
+.btn-dark {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-dark:hover {
+  background-color: gray;
+  color: black;
+}
+
+/* Paragraph styling */
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(0, 0, 0); /* Ensure text is readable against the background */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .section-heading {
+      font-size: 2rem;
+  }
+
+  .about-section p {
+      font-size: 1rem;
+  }
+}
+.content-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%; /* Adjust the image size */
+}
+
+/* award */
+
+.award-section {
+  margin: 20px;
+}
+
+.award-year {
+  font-size: 72px; /* Keep your existing font size */
+  font-weight: bold;
+  color: white; /* Change text color to white for better contrast */
+  position: absolute;
+  right: 20px;
+  top: 0;
+  background-color: red; /* Add background color for wrap effect */
+  padding: 10px; /* Add some padding for better aesthetics */
+  transform: rotate(60deg); /* Rotate the text */
+  transform-origin: top right; /* Set the origin for rotation */
+  z-index: 1; /* Ensure it sits above other content */
+}
+
+.award-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 20px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+
+.award-card img {
+  width: 100%;
+  border-radius: 15px 0 0 15px;
+  height: 250px;
+}
+
+.award-card-content {
+  padding: 20px;
+}
+
+.award-title {
+  font-size: 24px;
+  font-weight: bold;
+ 
+}
+
+.award-description {
+  color: #666;
+}
+
+/* news */
+.news-card {
+  margin-bottom: 20px;
+}
+
+.news-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+}
+
+.news-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.news-comments {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* .read-more-btn {
+  margin-top: 10px;
+} */
+
+ /* Style to position the pause button in the top-left */
+ .top-left-pause {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* Style for next/previous buttons on the right side */
+.right-side-control {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.image-container,
+.embed-responsive {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.image-size {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.embed-responsive {
+    height: 315px; /* You can adjust this based on design preference */
+    max-height: 100%;
+}
+iframe.embed-responsive-item {
+  width: 500px;
+  height: 250px;
+}
+.impact-section .image-container {
+  width: 418px;
+  
+}
+.iframe-video{
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+
+/*  */
+img.reload {
+  padding: 0.25em;
+  display: block-inline;
+  position: relative;
+  top: 6px;
+  height: 0.9em;
+}
+
+.carousel-tablist {
+  background-color: #eee;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-tablist .carousel-inner {
+  position: relative;
+}
+
+.carousel-tablist .carousel-items {
+  padding: 5px;
+}
+
+.carousel-tablist .carousel-items.focus {
+  padding: 2px;
+  border: solid 3px #005a9c;
+}
+
+.carousel-tablist .carousel-item {
+  display: none;
+  max-height: 520px;
+  max-width: 1200px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-tablist .carousel-item.active {
+  display: block;
+}
+
+/* More like bootstrap, less accessible */
+
+.carousel-tablist .carousel-item .carousel-image a img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-tablist .carousel-item .carousel-caption a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 600;
+}
+
+.carousel-tablist .carousel-item .carousel-caption a,
+.carousel-tablist .carousel-item .carousel-caption span.contrast {
+  margin: 0;
+  padding: 6px;
+  display: inline-block;
+  background-color: rgb(0 0 0 / 65%);
+  border-radius: 5px;
+  border: 0 solid transparent;
+}
+
+.carousel-tablist-moreaccessible .carousel-items .carousel-image a {
+  display: block;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption a {
+  display: inline-block;
+  margin: 0;
+  padding: 6px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption span.contrast,
+.carousel-tablist-moreaccessible
+  .carousel-item
+  .carousel-caption
+  span.contrast:hover {
+  background-color: transparent;
+}
+
+.carousel-tablist .carousel-item .carousel-caption a:hover,
+.carousel-tablist .carousel-item .carousel-caption span.contrast:hover {
+  background-color: rgb(0 0 0 / 100%);
+}
+
+.carousel-tablist .carousel-item .carousel-caption a:focus {
+  padding: 4px;
+  border: 2px solid #eee;
+  background-color: rgb(0 0 0 / 100%);
+  outline: none;
+  border-width: 2px solid #fff;
+  color: #fff;
+}
+
+.carousel-tablist .carousel-item .carousel-caption p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.carousel-tablist .carousel-item .carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Shared CSS for Pause and Tab Controls */
+
+.carousel-tablist .controls {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1em;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  padding: 0.25em 1.25em 0;
+}
+
+.carousel-tablist .tab-wrapper {
+  flex: 1 1 auto;
+  height: 30px;
+  text-align: center;
+}
+
+/* SVG Controls */
+
+.carousel-tablist .rotation {
+  flex: 0 0 auto;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 10;
+}
+
+.carousel-tablist .svg-play .background {
+  stroke: black;
+  fill: black;
+  stroke-width: 1px;
+  opacity: 0.6;
+}
+
+.carousel-tablist .svg-play .border {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2px;
+}
+
+.carousel-tablist .svg-play .pause {
+  stroke-width: 4;
+  fill: transparent;
+  stroke: transparent;
+}
+
+.carousel-tablist .svg-play .play {
+  stroke-width: 1;
+  fill: transparent;
+  stroke: transparent;
+}
+
+.carousel-tablist .pause .svg-play .pause,
+.carousel-tablist .play .svg-play .play {
+  fill: white;
+  stroke: white;
+}
+
+.carousel-tablist .rotation:focus .svg-play .background,
+.carousel-tablist .rotation:hover .svg-play .background,
+.carousel-tablist .rotation:hover .svg-play .border {
+  fill: #005a9c;
+  stroke: #005a9c;
+  opacity: 1;
+}
+
+.carousel-tablist .rotation:focus .svg-play .border {
+  stroke: white;
+}
+
+/* Shared CSS for Tabs */
+
+.carousel-tablist [role="tablist"] {
+  box-sizing: border-box;
+  border: 0 transparent solid;
+  border-radius: 13px;
+  display: inline-block;
+  padding-top: 2px;
+  height: 30px;
+  background-color: rgb(0 0 0 / 65%);
+}
+
+.carousel-tablist [role="tablist"].focus {
+  border-width: 2px;
+  border-color: white;
+  padding-top: 0;
+  background-color: #005a9c;
+}
+
+.carousel-tablist [role="tab"] {
+  position: relative;
+  top: -2px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 34px;
+}
+
+.carousel-tablist [role="tab"] circle.border {
+  display: none;
+  z-index: 12;
+}
+
+.carousel-tablist [role="tab"] circle.tab {
+  z-index: 16;
+}
+
+.carousel-tablist [role="tab"] circle.tab-background {
+  stroke: black;
+  fill: black;
+  stroke-width: 2px;
+  opacity: 0.6;
+  z-index: 14;
+}
+
+.carousel-tablist [role="tab"] circle.tab,
+.carousel-tablist [role="tab"] circle.border {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 2px;
+}
+
+.carousel-tablist-moreaccessible [role="tab"] circle.tab-background {
+  z-index: 16;
+}
+
+.carousel-tablist-moreaccessible [role="tab"] circle.tab {
+  z-index: 18;
+}
+
+.carousel-tablist [role="tab"][aria-selected="true"] circle.tab {
+  fill: white;
+}
+
+.carousel-tablist-moreaccessible [role="tab"] circle.border {
+  z-index: 14;
+}
+
+.carousel-tablist [role="tab"]:focus circle.border {
+  display: block;
+  fill: #005a9c;
+  stroke: #fff;
+}
+
+.carousel-tablist [role="tablist"].focus circle.tab-background {
+  stroke: #005a9c;
+  fill: #005a9c;
+}
+
+.carousel-tablist [role="tab"]:hover circle.tab-background {
+  fill: white;
+  stroke: white;
+  opacity: 1;
+}
+
+.carousel-tablist [role="tab"]:hover circle.border,
+.carousel-tablist [role="tab"]:hover circle.tab {
+  fill: #005a9c;
+  stroke: #005a9c;
+  opacity: 1;
+}
+
+.carousel-tablist [role="tab"][aria-selected="true"]:hover circle.tab {
+  fill: white;
+}
+
+/* More accessible carousel styles, with caption and controls above/below image */
+
+.carousel-tablist-moreaccessible {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: #eee solid 4px;
+  border-radius: 5px;
+}
+
+.carousel-tablist-moreaccessible .carousel-items,
+.carousel-tablist-moreaccessible .carousel-items.focus {
+  padding: 0;
+  border: none;
+}
+
+.carousel-tablist-moreaccessible .carousel-items.focus .carousel-image a {
+  padding: 2px;
+  border: 3px solid #005a9c;
+}
+
+/* More accessible caption styling */
+
+.carousel-tablist-moreaccessible .carousel-item {
+  padding: 0;
+  margin: 0;
+  max-height: none;
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption {
+  position: static;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  color: black;
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption p {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption h3 {
+  font-size: 1.1em;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption a:hover {
+  background-color: rgb(0 0 0 / 20%);
+}
+
+.carousel-tablist-moreaccessible .carousel-item .carousel-caption a:focus {
+  padding: 4px;
+  border: 2px solid #005a9c;
+  background-color: transparent;
+  color: black;
+  outline: none;
+}
+
+/* Shared CSS for Pause and Tab Controls */
+
+.carousel-tablist-moreaccessible .controls {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0.25em 0.25em 0;
+}
+
+/* Shared CSS for Tabs */
+
+.carousel-tablist-moreaccessible [role="tab"] {
+  z-index: 20;
+}
+.impact-section .impact {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 45px;
+  height: auto;
+  border-radius: 12px;
+
+}
+
+.navbar {
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 99;
+ 
+}
+.social-media-icons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  background: #00000014;
+  border-radius: 90px;
+  padding: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+nav a {
+  margin-left: 0;
+}
+
+.social-media-icons li {
+  
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;  
+  z-index: 999;   /* Center the icons vertically */
+ 
+}
+.social-media-icons li a {
+  color: #ffffff;
+  text-decoration: none;
+  background: #808080;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  z-index: 999;
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center;
+  margin: auto;  
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-right: 0;
+}
+.social-media-icons li i {
+  font-size: 16px;
+  display: block;
+  margin: 0;
+}
+#skip-link {
+  position: absolute;
+  top:-40px;
+  left:218px;
+  z-index: 1;
+  padding: .2em;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 3px;
+  background-color: white;
+}
+#skip-link:focus {
+  top: 10px; /* Brings it back into view when focused */
+}
+
+.last-project{
+  margin-top: -126px;
+}
+
+.spotify-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 268px;
+  background: url('image/spotify.jpg') no-repeat center center;
+  background-size: cover;
+  opacity:0.8;
+}
+
+.spotify-link img {
+  opacity: 0; /* Hide the image, as the background will handle it */
+}
+
+.spotify-link .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.spotify-link:hover .play-icon {
+  opacity: 1;
+}
+
+
+
+
+
+.banner-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-bg-image {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
+  bottom: 0;
+}
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: left;
+}
+
+.quote {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.quote img.qote-last {
+  vertical-align: middle;
+}
+
+.banner-content {
+  margin-left: 50px;
+}
+
+.banner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d5d1d138; 
+  z-index: 1;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #000000;
+}
+
+
+@media (max-width: 767px) {
+  .banner-section {
+    height: auto;
+    padding: 40px 20px;
+    display: block;
+    text-align: center;
+    background: none; 
+  }
+
+  .text-overlay {
+    padding: 20px;
+  }
+
+  .banner-content {
+    margin-left: 0;
+  }
+
+  .quote {
+    font-size: 1.8rem; 
+    line-height: 1.3;
+  }
+
+  .quote img.qote-last {
+    display: block;
+  
+  }
+
+  .h6 {
+    font-size: 1rem;
+  }
+
+
+  .banner-image {
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-section {
+    height: auto;
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .h6 {
+    font-size: 1.1rem;
+  }
+
+  .banner-image {
+    width: 80%; 
+    height: auto;
+    margin: 20px auto;
+  }
+}
+ 
+/* 
+
+ .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.banner-content {
+  z-index: 2; 
+  color: white;
+}
+
+.banner img.qote-last {
+  vertical-align: middle;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 450px; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: auto;
+    padding: 40px 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .banner-content {
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+  }
+
+  .h6 {
+    font-size: 1rem;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: auto;
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+  }
+} */
+
+
+@media(max-width:1199px)
+{
+  .banner .quote {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 800;
+    color: #4e4a4ae0;
+  }
+  .quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+    background-image: url(image/left.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+.qote-last {
+
+  width: 52px;
+  height: 52px;
+  
+}
+.banner .quote {
+  
+  padding-right: 6rem;
+}
+.banner-section
+{
+  min-height: 70vh;
+}
+}
+
+@media(max-width:560px)
+{
+  
+.banner .quote {
+  
+  padding-right: 0rem;
+}
+
+}
+
+.navbar-custom {
+  background-color: #000;
+  padding: 20px;
+  
+}
+
+.navbar-custom .nav-link {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.navbar-custom .nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-outline-light {
+  border-width: 2px;
+  padding: 18px 30px;
+  font-weight: bold;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.award-image{
+  object-fit: cover;
+  object-position: 15% 17%;
+  
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px 25px 0 0;
+  -webkit-border-radius: 25px 25px 0 0;
+  -moz-border-radius: 25px 25px 0 0;
+  -ms-border-radius: 25px 25px 0 0;
+  -o-border-radius: 25px 25px 0 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer p {
+  margin: 10px 0 0;
+}
+
+.logo-footer {
+  width: 150px;
+}
+
+.logo-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Custom responsive design */
+.nav-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line{
+  width: 1200px;
+}
+
+@media (min-width: 768px) {
+
+  .nav-column {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .nav-column .nav-link {
+      margin: 0 15px;
+  }
+ 
+}
