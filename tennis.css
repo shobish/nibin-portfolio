@@ -156,7 +156,7 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a[aria-current="page"] {
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--accent-dark);
 }
 
@@ -508,7 +508,7 @@ footer {
 
 .navbar-custom .nav-link:hover,
 .navbar-custom .nav-link:focus {
-    text-decoration: underline;
+    text-decoration: none;
     color: #fff;
     outline: 2px solid #fff;
     outline-offset: 2px;
